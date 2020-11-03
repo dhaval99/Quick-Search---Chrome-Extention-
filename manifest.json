@@ -1,0 +1,17 @@
+{
+    "name": "Quick Search",
+    "description": "Search easy and fast.",
+    "version": "1.0.1",
+    "manifest_version": 2,
+    "icons": { "128": "search.png" },
+    "content_scripts": [
+        {
+            "run_at": "document_idle",
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ],
+    "permissions": ["activeTabs"]
+
+
+}
